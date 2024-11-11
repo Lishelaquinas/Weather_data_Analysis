@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body>
+    <div class="container">
+        <h1>Weather Data Dashboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Temperature (°C)</th>
+                    <th>Humidity (%)</th>
+                    <th>Weather Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in weather_data %}
+                <tr>
+                    <td class="date">{{ record['date'][:10] }}</td>  <!-- Display only YYYY-MM-DD -->
+                    <td>{{ record['temperature'] }}</td>
+                    <td>{{ record['humidity'] }}</td>
+                    <td>{{ record['weather'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
