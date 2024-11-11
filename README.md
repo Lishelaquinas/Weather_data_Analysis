@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 #### 4.Add your API Key
 
-#### Run the project.
+#### 5.Run the project.
 Run Data Collection:
     ```bash
     python data_collection/fetch_weather_data.py
