@@ -23,27 +23,27 @@ pip install -r requirements.txt
 #### 4.Add your API Key
 
 #### Run the project.
-**Run Data Collection**:
+Run Data Collection:
     ```bash
     python data_collection/fetch_weather_data.py
     ```
 
-**Run Data Cleaning**:
+Run Data Cleaning:
     ```bash
     python data_processing/clean_data.py
     ```
 
-**Run Data Analysis**:
+Run Data Analysis:
     ```bash
     python data_processing/analyze_data.py
     ```
 
-**Generate Visualization**:
+Generate Visualization:
     ```bash
     python visualization/weather_dashboard.py
     ```
 
-**Start Flask Web Application**:
+Start Flask Web Application:
     ```bash
     cd web_app
     python app.py
